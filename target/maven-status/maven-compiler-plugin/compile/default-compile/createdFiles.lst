@@ -1,0 +1,3 @@
+com\cisco\automation\modules\inv\TestInv.class
+com\cisco\automation\modules\fault\TestFault.class
+com\cisco\automation\modules\session_mon\TestSessionMon.class

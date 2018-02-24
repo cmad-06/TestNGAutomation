@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite for ENT">
+	<test thread-count="5" name="Test ENT">
+		<groups>
+			<run>
+				<include name="ent"></include>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.cisco.automation.modules.inv.TestInv" />
+			<class name="com.cisco.automation.modules.fault.TestFault" />
+		</classes>
+	</test>
+</suite>

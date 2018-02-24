@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite for ENT]">
+  <test name="Test ENT(failed)">
+    <groups>
+      <run>
+        <include name="ent"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.cisco.automation.modules.inv.TestInv">
+        <methods>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- com.cisco.automation.modules.inv.TestInv -->
+    </classes>
+  </test> <!-- Test ENT(failed) -->
+</suite> <!-- Failed suite [Regression Suite for ENT] -->
