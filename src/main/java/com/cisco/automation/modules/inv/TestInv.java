@@ -16,7 +16,7 @@ public class TestInv {
 	
 //---------------------------------------------------------------------------------------------	
 	
-	@Test(description="my first test case", groups={"ent"})
+	@Test(description="my first test case")
 	public void TestSoftAssertion(){
 		SoftAssert sa = new SoftAssert();
 		System.out.println("Inv test1");
@@ -31,6 +31,18 @@ public class TestInv {
 	@Test(description="my second test case")
 	public void TestHardAssertion(){
 		System.out.println("Inv test1");
+		int res = 11;
+		Assert.assertEquals(res, 10);  //fails here
+		System.out.println("Inv test1 2nd assert");	//never executed
+
+	}
+
+//---------------------------------------------------------------------------------------------
+
+	
+	@Test(description="my third test case", groups={"ent"})
+	public void TestGrouping(){
+		System.out.println("Inv test3");
 		int res = 11;
 		Assert.assertEquals(res, 10);  //fails here
 		System.out.println("Inv test1 2nd assert");	//never executed
