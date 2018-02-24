@@ -11,7 +11,7 @@ public class TestInv {
 	
 	@BeforeMethod
 	public void preSetup(){
-		System.out.println("inside before test");
+		System.out.println("inside before method");
 	}
 	
 //---------------------------------------------------------------------------------------------	
