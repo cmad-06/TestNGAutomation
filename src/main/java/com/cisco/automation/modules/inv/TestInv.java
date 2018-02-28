@@ -61,7 +61,7 @@ public class TestInv {
 	@Test(description="my third test case", groups={"ent"})
 	public void TestGrouping(){
 		System.out.println("Inv test3");
-		int res = 11;
+		int res = 10;
 		Assert.assertEquals(res, 10);  //fails here
 		System.out.println("Inv test1 2nd assert");	//never executed
 

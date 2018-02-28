@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="80" started-at="2018-02-24T08:02:23Z" finished-at="2018-02-24T08:02:23Z">
+  <suite name="Regression Suite" duration-ms="67" started-at="2018-02-28T05:54:15Z" finished-at="2018-02-28T05:54:15Z">
     <groups>
       <group name="ent">
         <method signature="TestInv.TestGrouping()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestGrouping" class="com.cisco.automation.modules.inv.TestInv"/>
       </group> <!-- ent -->
     </groups>
-    <test name="Test" duration-ms="80" started-at="2018-02-24T08:02:23Z" finished-at="2018-02-24T08:02:23Z">
+    <test name="Test" duration-ms="67" started-at="2018-02-28T05:54:15Z" finished-at="2018-02-28T05:54:15Z">
       <class name="com.cisco.automation.modules.fault.TestFault">
-        <test-method status="PASS" signature="Test1()[pri:0, instance:com.cisco.automation.modules.fault.TestFault@7dc7cbad]" name="Test1" duration-ms="4" started-at="2018-02-24T13:32:23Z" finished-at="2018-02-24T13:32:23Z">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:com.cisco.automation.modules.fault.TestFault@7dc7cbad]" name="Test1" duration-ms="1" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
       </class> <!-- com.cisco.automation.modules.fault.TestFault -->
       <class name="com.cisco.automation.modules.inv.TestInv">
-        <test-method status="PASS" signature="preClassSetup(java.lang.String)[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preClassSetup" is-config="true" duration-ms="13" started-at="2018-02-24T13:32:23Z" finished-at="2018-02-24T13:32:23Z">
+        <test-method status="PASS" signature="preClassSetup(java.lang.String)[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preClassSetup" is-config="true" duration-ms="13" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preClassSetup -->
-        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="1" started-at="2018-02-24T13:32:23Z" finished-at="2018-02-24T13:32:23Z">
+        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="1" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preMethodSetup -->
-        <test-method status="FAIL" signature="TestGrouping()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestGrouping" duration-ms="9" started-at="2018-02-24T13:32:23Z" description="my third test case" finished-at="2018-02-24T13:32:23Z">
+        <test-method status="FAIL" signature="TestGrouping()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestGrouping" duration-ms="8" started-at="2018-02-28T11:24:15Z" description="my third test case" finished-at="2018-02-28T11:24:15Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [10] but found [11]]]>
@@ -76,19 +76,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestGrouping -->
-        <test-method status="PASS" signature="TestHardAssertion()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestHardAssertion" duration-ms="2" started-at="2018-02-24T13:32:23Z" description="my second test case" finished-at="2018-02-24T13:32:23Z">
+        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="1" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preMethodSetup -->
+        <test-method status="PASS" signature="TestHardAssertion()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestHardAssertion" duration-ms="1" started-at="2018-02-28T11:24:15Z" description="my second test case" finished-at="2018-02-28T11:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestHardAssertion -->
-        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="0" started-at="2018-02-24T13:32:23Z" finished-at="2018-02-24T13:32:23Z">
+        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="0" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preMethodSetup -->
-        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="1" started-at="2018-02-24T13:32:23Z" finished-at="2018-02-24T13:32:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preMethodSetup -->
-        <test-method status="PASS" signature="TestSoftAssertion()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestSoftAssertion" duration-ms="5" started-at="2018-02-24T13:32:23Z" description="my first test case" finished-at="2018-02-24T13:32:23Z">
+        <test-method status="PASS" signature="TestSoftAssertion()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestSoftAssertion" duration-ms="5" started-at="2018-02-28T11:24:15Z" description="my first test case" finished-at="2018-02-28T11:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSoftAssertion -->
