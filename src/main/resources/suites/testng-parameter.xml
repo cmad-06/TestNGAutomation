@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
+	<parameter name="server_ip" value="127.0.0.1"></parameter>
+	<parameter name="username" value="username"></parameter>
+	<parameter name="password" value="secret"></parameter>
+
 	<test thread-count="5" name="Test">
-
-		<parameter name="server_ip" value="10.104.121.121"></parameter>
-		<parameter name="username" value="globaladmin"></parameter>
-		<parameter name="password" value="Ecmbu!23"></parameter>
-
 		<classes>
-			<class name="com.cisco.automation.modules.inv.TestInv" />
-			<class name="com.cisco.automation.modules.fault.TestFault" />
+			<class name="com.cisco.automation.modules.user.TestUser" />
+			<class name="com.cisco.automation.modules.blog.TestBlog" />
 		</classes>
 	</test>
 </suite>

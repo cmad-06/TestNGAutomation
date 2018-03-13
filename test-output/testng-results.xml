@@ -1,58 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="67" started-at="2018-02-28T05:54:15Z" finished-at="2018-02-28T05:54:15Z">
+  <suite name="Regression Suite" duration-ms="40" started-at="2018-03-13T05:06:42Z" finished-at="2018-03-13T05:06:42Z">
     <groups>
-      <group name="ent">
-        <method signature="TestInv.TestGrouping()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestGrouping" class="com.cisco.automation.modules.inv.TestInv"/>
-      </group> <!-- ent -->
     </groups>
-    <test name="Test" duration-ms="67" started-at="2018-02-28T05:54:15Z" finished-at="2018-02-28T05:54:15Z">
-      <class name="com.cisco.automation.modules.fault.TestFault">
-        <test-method status="PASS" signature="Test1()[pri:0, instance:com.cisco.automation.modules.fault.TestFault@7dc7cbad]" name="Test1" duration-ms="1" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-      </class> <!-- com.cisco.automation.modules.fault.TestFault -->
-      <class name="com.cisco.automation.modules.inv.TestInv">
-        <test-method status="PASS" signature="preClassSetup(java.lang.String)[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preClassSetup" is-config="true" duration-ms="13" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10.104.121.121]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preClassSetup -->
-        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="1" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preMethodSetup -->
-        <test-method status="FAIL" signature="TestGrouping()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestGrouping" duration-ms="8" started-at="2018-02-28T11:24:15Z" description="my third test case" finished-at="2018-02-28T11:24:15Z">
-          <exception class="java.lang.AssertionError">
+    <test name="Test" duration-ms="40" started-at="2018-03-13T05:06:42Z" finished-at="2018-03-13T05:06:42Z">
+      <class name="com.cisco.automation.modules.user.TestUser">
+        <test-method status="SKIP" signature="TestDependency2()[pri:0, instance:com.cisco.automation.modules.user.TestUser@482f8f11]" name="TestDependency2" duration-ms="1" started-at="2018-03-13T10:36:42Z" description="my second session mon test case" finished-at="2018-03-13T10:36:42Z">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[expected [10] but found [11]]]>
+              <![CDATA[
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [10] but found [11]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at org.testng.Assert.assertEquals(Assert.java:398)
-	at com.cisco.automation.modules.inv.TestInv.TestGrouping(TestInv.java:65)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDependency2 -->
+        <test-method status="SKIP" signature="TestDependency3()[pri:0, instance:com.cisco.automation.modules.user.TestUser@482f8f11]" name="TestDependency3" duration-ms="0" started-at="2018-03-13T10:36:42Z" description="my third session mon test case" finished-at="2018-03-13T10:36:42Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDependency3 -->
+        <test-method status="SKIP" signature="TestDependency1()[pri:0, instance:com.cisco.automation.modules.user.TestUser@482f8f11]" name="TestDependency1" duration-ms="0" started-at="2018-03-13T10:36:42Z" description="my first session mon test case" depends-on-methods="com.cisco.automation.modules.user.TestUser.TestDependency2" finished-at="2018-03-13T10:36:42Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestUser.TestDependency1()[pri:0, instance:com.cisco.automation.modules.user.TestUser@482f8f11] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestUser.TestDependency1()[pri:0, instance:com.cisco.automation.modules.user.TestUser@482f8f11] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:744)
@@ -72,27 +100,79 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestGrouping -->
-        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="1" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
+        </test-method> <!-- TestDependency1 -->
+      </class> <!-- com.cisco.automation.modules.user.TestUser -->
+      <class name="com.cisco.automation.modules.blog.TestBlog">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cisco.automation.modules.blog.TestBlog@51565ec2]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-13T10:36:42Z" finished-at="2018-03-13T10:36:42Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preMethodSetup -->
-        <test-method status="PASS" signature="TestHardAssertion()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestHardAssertion" duration-ms="1" started-at="2018-02-28T11:24:15Z" description="my second test case" finished-at="2018-02-28T11:24:15Z">
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="Test1()[pri:0, instance:com.cisco.automation.modules.blog.TestBlog@51565ec2]" name="Test1" duration-ms="1" started-at="2018-03-13T10:36:42Z" finished-at="2018-03-13T10:36:42Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'server_ip' is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\vibhjain\Desktop\CISCO_DOCS\STUDY_18\GIT_CMAD_TESTNG\TestNGAutomation\src\main\resources\suites\testng-parameter.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestHardAssertion -->
-        <test-method status="PASS" signature="preMethodSetup()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="preMethodSetup" is-config="true" duration-ms="0" started-at="2018-02-28T11:24:15Z" finished-at="2018-02-28T11:24:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preMethodSetup -->
-        <test-method status="PASS" signature="TestSoftAssertion()[pri:0, instance:com.cisco.automation.modules.inv.TestInv@5419f379]" name="TestSoftAssertion" duration-ms="5" started-at="2018-02-28T11:24:15Z" description="my first test case" finished-at="2018-02-28T11:24:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestSoftAssertion -->
-      </class> <!-- com.cisco.automation.modules.inv.TestInv -->
+        </test-method> <!-- Test1 -->
+      </class> <!-- com.cisco.automation.modules.blog.TestBlog -->
     </test> <!-- Test -->
   </suite> <!-- Regression Suite -->
 </testng-results>

@@ -2,17 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
   <test name="Test(failed)">
-    <parameter name="password" value="Ecmbu!23"/>
-    <parameter name="server_ip" value="10.104.121.121"/>
-    <parameter name="username" value="globaladmin"/>
+    <parameter name="password" value="secret"/>
+    <parameter name="server_ip" value="localhost"/>
+    <parameter name="username" value="username"/>
     <classes>
-      <class name="com.cisco.automation.modules.inv.TestInv">
+      <class name="com.cisco.automation.modules.blog.TestBlog">
         <methods>
-          <include name="preMethodSetup"/>
-          <include name="preClassSetup"/>
-          <include name="TestGrouping"/>
+          <include name="setup"/>
+          <include name="Test1"/>
         </methods>
-      </class> <!-- com.cisco.automation.modules.inv.TestInv -->
+      </class> <!-- com.cisco.automation.modules.blog.TestBlog -->
+      <class name="com.cisco.automation.modules.user.TestUser">
+        <methods>
+          <include name="TestDependency1"/>
+          <include name="TestDependency3"/>
+          <include name="TestDependency2"/>
+        </methods>
+      </class> <!-- com.cisco.automation.modules.user.TestUser -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

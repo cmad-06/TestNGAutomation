@@ -1,4 +1,4 @@
-package com.cisco.automation.modules.inv;
+package com.cisco.automation.modules.comment;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -7,7 +7,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class TestInv {
+import com.cisco.automation.modules.global.CMADTest;
+
+public class TestComment extends CMADTest{
 
 	
 	private String baseURL;
