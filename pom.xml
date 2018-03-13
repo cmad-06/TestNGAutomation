@@ -24,6 +24,16 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>3.0.0</version>
@@ -58,7 +68,7 @@
 						<!--suiteXmlFile>src/test/resources/suites/pca-feature-test-suite.xml</suiteXmlFile-->
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
-					<!-- properties>
+					<properties>
 						<property>
 							<name> usedefaultlisteners</name>
 							<value> false </value>
@@ -71,7 +81,7 @@
 							<name>reporter</name>
 							<value> listenReport.Reporter</value>
 						</property>
-					</properties -->
+					</properties>
 				</configuration>
 			</plugin>
 			<plugin>
