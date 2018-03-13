@@ -1,0 +1,100 @@
+2018-03-13 19:10:23 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://127.0.0.1:8080
+2018-03-13 19:10:23 DEBUG DefaultClientConnectionOperator:176 - Connecting to 127.0.0.1:8080
+2018-03-13 19:10:23 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2018-03-13 19:10:23 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2018-03-13 19:10:23 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2018-03-13 19:10:23 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2018-03-13 19:10:23 DEBUG DefaultClientConnection:276 - Sending request: GET /heapunderflow/service/blog/1 HTTP/1.1
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "GET /heapunderflow/service/blog/1 HTTP/1.1[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "Authorization: Basic dXNlcm5hbWU6c2VjcmV0[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "Content-Length: 0[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "Host: 127.0.0.1:8080[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_161)[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  >> "[\r][\n]"
+2018-03-13 19:10:23 DEBUG headers:280 - >> GET /heapunderflow/service/blog/1 HTTP/1.1
+2018-03-13 19:10:23 DEBUG headers:283 - >> Authorization: Basic dXNlcm5hbWU6c2VjcmV0
+2018-03-13 19:10:23 DEBUG headers:283 - >> Accept: */*
+2018-03-13 19:10:23 DEBUG headers:283 - >> Content-Length: 0
+2018-03-13 19:10:23 DEBUG headers:283 - >> Host: 127.0.0.1:8080
+2018-03-13 19:10:23 DEBUG headers:283 - >> Connection: Keep-Alive
+2018-03-13 19:10:23 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_161)
+2018-03-13 19:10:23 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2018-03-13 19:10:23 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  << "Server: Apache-Coyote/1.1[\r][\n]"
+2018-03-13 19:10:23 DEBUG wire:72 -  << "Content-Type: application/json[\r][\n]"
+2018-03-13 19:10:24 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-03-13 19:10:24 DEBUG wire:72 -  << "Date: Tue, 13 Mar 2018 13:40:23 GMT[\r][\n]"
+2018-03-13 19:10:24 DEBUG wire:72 -  << "[\r][\n]"
+2018-03-13 19:10:24 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2018-03-13 19:10:24 DEBUG headers:264 - << HTTP/1.1 200 OK
+2018-03-13 19:10:24 DEBUG headers:267 - << Server: Apache-Coyote/1.1
+2018-03-13 19:10:24 DEBUG headers:267 - << Content-Type: application/json
+2018-03-13 19:10:24 DEBUG headers:267 - << Transfer-Encoding: chunked
+2018-03-13 19:10:24 DEBUG headers:267 - << Date: Tue, 13 Mar 2018 13:40:23 GMT
+2018-03-13 19:10:24 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2018-03-13 19:10:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2018-03-13 19:10:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-03-13 19:10:24 DEBUG wire:72 -  << "7e[\r][\n]"
+2018-03-13 19:10:24 DEBUG wire:86 -  << "{"blogId":1,"blogTitle":"Sample title2","blogAuthor":null,"blogText":"sample desc","blogCreation":1520827811000,"blogLikes":0}"
+2018-03-13 19:10:24 DEBUG wire:72 -  << "[\r][\n]"
+2018-03-13 19:10:24 DEBUG wire:72 -  << "0[\r][\n]"
+2018-03-13 19:10:24 DEBUG wire:72 -  << "[\r][\n]"
+2018-03-13 19:10:24 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1dd6d4b7
+2018-03-13 19:10:24 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2018-03-13 19:10:24 DEBUG root:20 - {
+    "blogId": 1,
+    "blogTitle": "Sample title2",
+    "blogAuthor": null,
+    "blogText": "sample desc",
+    "blogCreation": 1520827811000,
+    "blogLikes": 0
+}
+2018-03-13 19:10:25 DEBUG BasicClientConnectionManager:164 - Get connection for route {}->http://127.0.0.1:8080
+2018-03-13 19:10:25 DEBUG DefaultClientConnectionOperator:176 - Connecting to 127.0.0.1:8080
+2018-03-13 19:10:25 DEBUG RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2018-03-13 19:10:25 DEBUG RequestAuthCache:76 - Auth cache not set in the context
+2018-03-13 19:10:25 DEBUG RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2018-03-13 19:10:25 DEBUG DefaultHttpClient:684 - Attempt 1 to execute request
+2018-03-13 19:10:25 DEBUG DefaultClientConnection:276 - Sending request: GET /heapunderflow/service/blog/1 HTTP/1.1
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "GET /heapunderflow/service/blog/1 HTTP/1.1[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "Authorization: Basic dXNlcm5hbWU6c2VjcmV0[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "Accept: */*[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "Content-Length: 0[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "Host: 127.0.0.1:8080[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_161)[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  >> "[\r][\n]"
+2018-03-13 19:10:25 DEBUG headers:280 - >> GET /heapunderflow/service/blog/1 HTTP/1.1
+2018-03-13 19:10:25 DEBUG headers:283 - >> Authorization: Basic dXNlcm5hbWU6c2VjcmV0
+2018-03-13 19:10:25 DEBUG headers:283 - >> Accept: */*
+2018-03-13 19:10:25 DEBUG headers:283 - >> Content-Length: 0
+2018-03-13 19:10:25 DEBUG headers:283 - >> Host: 127.0.0.1:8080
+2018-03-13 19:10:25 DEBUG headers:283 - >> Connection: Keep-Alive
+2018-03-13 19:10:25 DEBUG headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_161)
+2018-03-13 19:10:25 DEBUG headers:283 - >> Accept-Encoding: gzip,deflate
+2018-03-13 19:10:25 DEBUG wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "Server: Apache-Coyote/1.1[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "Content-Type: application/json[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "Date: Tue, 13 Mar 2018 13:40:25 GMT[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "[\r][\n]"
+2018-03-13 19:10:25 DEBUG DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2018-03-13 19:10:25 DEBUG headers:264 - << HTTP/1.1 200 OK
+2018-03-13 19:10:25 DEBUG headers:267 - << Server: Apache-Coyote/1.1
+2018-03-13 19:10:25 DEBUG headers:267 - << Content-Type: application/json
+2018-03-13 19:10:25 DEBUG headers:267 - << Transfer-Encoding: chunked
+2018-03-13 19:10:25 DEBUG headers:267 - << Date: Tue, 13 Mar 2018 13:40:25 GMT
+2018-03-13 19:10:25 DEBUG DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2018-03-13 19:10:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2018-03-13 19:10:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-03-13 19:10:25 DEBUG wire:72 -  << "7e[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:86 -  << "{"blogId":1,"blogTitle":"Sample title2","blogAuthor":null,"blogText":"sample desc","blogCreation":1520827811000,"blogLikes":0}"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "0[\r][\n]"
+2018-03-13 19:10:25 DEBUG wire:72 -  << "[\r][\n]"
+2018-03-13 19:10:25 DEBUG BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2f7a7219
+2018-03-13 19:10:25 DEBUG BasicClientConnectionManager:228 - Connection can be kept alive indefinitely

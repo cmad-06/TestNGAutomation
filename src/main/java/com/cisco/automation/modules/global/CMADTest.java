@@ -4,15 +4,13 @@ import java.io.UnsupportedEncodingException;
 
 import javax.xml.bind.DatatypeConverter;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 //import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.http.Method;
-import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 /**
@@ -28,7 +26,7 @@ public class CMADTest {
 	private static String app_password;
 	private static String jsessionid;
 	
-//	public final static Logger logger = Logger.getRootLogger();
+	public final static Logger logger = Logger.getRootLogger();
 
 	
 //----------------------------------------------------------------------------------------------------------------------	
