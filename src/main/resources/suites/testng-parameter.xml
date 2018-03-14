@@ -5,7 +5,7 @@
 	<parameter name="username" value="username"></parameter>
 	<parameter name="password" value="secret"></parameter>
 
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="Test REST APIs">
 		<classes>
 			<class name="com.cisco.automation.modules.user.TestUser" />
 			<class name="com.cisco.automation.modules.blog.TestBlog" />
